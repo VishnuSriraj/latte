@@ -5,9 +5,6 @@ $background-pale: #f5f6f7;
 
 // Height variables
 $carousel-item-height: 500px;
-.container{
-    overflow:hidden;
-}
 
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
     margin: 0px auto;
@@ -30,7 +27,9 @@ $carousel-item-height: 500px;
         color: #6f4e37;
     }
 }
-
+a{
+    color: #6f4e37;
+}
 .jumbotron {
     @include zero-margin(70px,30px);
     background-image: url('../img/food.jpg')!important;
@@ -71,6 +70,7 @@ body {
 }
 .carousel {
     background: $background-light;
+    
     .carousel-item {
         min-height: $carousel-item-height;
 
